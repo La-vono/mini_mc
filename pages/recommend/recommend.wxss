@@ -1,0 +1,53 @@
+/* pages/recommend/recommend.wxss */
+/* 页面样式 */
+page{
+	background: #ccc;
+	
+}
+/* 图片轮播 */
+.swiper .swiper-image{
+	width: 100%;
+}
+
+/* 音乐播放列表 */
+/* 列表成员 */
+.musicList .musicList-item{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 180rpx;
+	background:#f6fae9;
+	margin: 4rpx 0;
+	padding:0 10rpx;
+	box-sizing: border-box;
+}
+
+/* 列表图片 */
+.musicList .musicList-item .musicList-item-image{
+	width: 220rpx;
+	height: 160rpx;
+	margin-right: 20rpx;
+}
+
+/* 列表按钮 */
+.musicList .musicList-item .musicList-item-btn{
+	width: 100rpx;
+	height: 100rpx;
+}
+
+/* 列表中间模块 */
+.musicList .musicList-item .musicList-item-box{
+	width: 100%;
+	color: gray;
+}
+
+.musicList .musicList-item .musicList-item-box .musicList-item-name{
+	font-size: 43rpx;
+}
+
+/* 列表右边按钮 */
+.musicList .musicList-item .musicList-item-btn{
+	width: 80rpx ;
+	height: 60rpx;
+}
+

@@ -1,0 +1,30 @@
+<!--pages/recommend/recommend.wxml-->
+<!-- 轮播图 -->
+<view class="swiper">
+	<swiper indicator-dots="true" autoplay="true" interval="2000">
+		<swiper-item wx:for="{{imgDatas}}" wx:key="index">
+			<image class="swiper-image" src="{{item}}" mode="aspectFill"></image>
+		</swiper-item>
+	</swiper>
+</view>
+
+
+<!-- 播放列表 -->
+<view class="musicList">
+	<view 
+		class="musicList-item" 
+		wx:for="{{musicDatas}}" 
+		wx:key="index" 
+		bindtap="toPlay" 
+		data-item="{{item}}"
+	>
+		<image class="musicList-item-image" src="{{item.picUrl}}"></image>
+		<view class="musicList-item-box">
+			<view class="musicList-item-name">{{item.name}}</view>
+			<text class="musicList-item-artists">{{item.artists}}</text>
+			<text>-</text>
+			<text class="musicList-item-albumname">{{item.albumname}}</text>
+		</view>
+		<image class="musicList-item-btn" src="../../images/more.png"></image>
+	</view>
+</view>

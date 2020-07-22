@@ -1,0 +1,92 @@
+/* pages/play/play.wxss */
+/* 页面样式 */
+page{
+	background: radial-gradient(rgba(0, 0, 0, 0.5) 30%, rgba(0, 0, 0, 1)); 
+}
+/* 音乐背景图 */
+.bg{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+.title{
+	background: #000;
+	opacity: 0.5;
+	height: 150rpx;
+	font-family: "苹方";
+}
+.title .name{
+	color: #fff;
+	text-align: center;
+	font-size: 60rpx;
+}
+.title .artists{
+	color: #fff;
+	margin-left: 26rpx;
+}
+
+/* cd背景 */
+.cd-bg{
+	width: 252rpx;
+	height: 252rpx;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 90rpx solid rgba(0,0,0,0.4);
+	margin: 0 auto;
+	margin-top: 60rpx;
+}
+.cd-bg-image{
+	width: 100%;
+	height: 100%;
+}
+
+/* 音乐播放控制器 */
+.control{
+	width: 100%;
+	height: 150rpx;
+	background: #000;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+/* 进度条 */
+.control .progress{
+	height: 60rpx;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.control .progress progress{
+	width: 80%;
+}
+.control .progress .time{
+	color: #fff;
+	font-size: 20rpx;
+}
+
+/* 按钮 */
+.control .btns{
+	height: 100rpx;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.control .btns .btn{
+	width: 70rpx;
+	height: 70rpx;
+}
+.control .btns .btn image{
+	width: 100%;
+	height: 100%;
+}
+.control .btns .mode,.control .btns .share{
+	width: 50rpx;
+	height: 50rpx;
+}
+.control .btns .play{
+	width: 82rpx;
+	height: 82rpx;
+}

@@ -1,0 +1,51 @@
+<!--pages/play/play.wxml-->
+<!-- 音乐播放器 -->
+<audio id="myMusic" style="display: none;" bindtimeupdate="timeupdate" ></audio>
+
+<!-- 音乐背景图 -->
+<image class="bg" mode="aspectFill" src="{{currentMusic.picUrl}}"></image>
+
+<!-- 音乐标题 -->
+<view class="title">
+	<view class="name">{{currentMusic.name}}</view>
+	<view class="artists">{{currentMusic.artists}}-{{currentMusic.albumname}}</view>
+</view>
+
+<!-- cd背景 -->
+<view class="cd-bg">
+	<image 
+	class="cd-bg-image" 
+	mode="aspectFill" 
+	src="{{currentMusic.picUrl}}"
+	style="transform: rotate({{deg}}deg);"
+	></image>
+</view>
+
+<!-- 音乐播放控制器 -->
+<view class="control">
+	<!-- 进度条 -->
+	<view class="progress">
+		<view class="time start-time">{{startTime}}</view>
+		<progress percent="{{progress}}" color="red"></progress>
+		<view class="time end-time">{{endTime}}</view>
+	</view>
+	
+	<!-- 播放按钮 -->
+	<view class="btns">
+		<view class="btn mode">
+			<image src="/images/random.png"></image>
+		</view>
+		<view class="btn prev" bindtap="prev">
+			<image src="/images/prev.png"></image>
+		</view>
+		<view class="btn play">
+			<image src="{{bool ? '/images/pause.png' : '/images/play.png'}}" bindtap="play"></image>
+		</view>
+		<view class="btn next" bindtap="next">
+			<image src="/images/next.png"></image>
+		</view>
+		<view class="btn share">
+			<image src="/images/share.png"></image>
+		</view>
+	</view>
+</view>

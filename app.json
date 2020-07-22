@@ -1,0 +1,31 @@
+{
+	"pages": [
+		"pages/recommend/recommend",
+		"pages/about/about",
+		"pages/play/play"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "WeChat",
+		"navigationBarTextStyle": "black"
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"tabBar": {
+		"color":"#000",
+		"selectedColor":"#f00",
+		"backgroundColor":"#fff",
+		"list": [{
+			"pagePath": "pages/recommend/recommend",
+			"text": "推荐音乐",
+			"iconPath":"images/music.png",
+			"selectedIconPath":"images/music-active.png"
+		}, {
+			"pagePath": "pages/about/about",
+			"text": "关于我",
+			"iconPath":"images/my.png",
+			"selectedIconPath":"images/my-active.png"
+		}]
+	}
+}
